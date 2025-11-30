@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 """just read the name this file just clear/delete all log files in current folder """
 ## import modules
 import os
