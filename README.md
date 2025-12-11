@@ -4,4 +4,4 @@
 Work Only with Debian, Ubuntu, Linux Mint or any linux Distro use APT as package manager
 
 ## some simple python clean tools 
-that clean and/or remove file (like `.log` file) and folders/directory (like `__pycache__` the cache folder)
+that clean or remove file (like `.log` file) and folders/directory (like `__pycache__` the cache folder)
