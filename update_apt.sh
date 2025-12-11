@@ -2,7 +2,7 @@
 sudo apt update -y && sudo apt upgrade  && sudo apt full-upgrade 
 sudo apt autopurge  && sudo apt autoremove  && sudo apt autoclean
 
-check=$(dpkg -l | grep "aptitude") #
+check=$(dpkg -l | grep "aptitude") # check if `aptitude` installed
 if [[ $check == "" ]]; then
 	sudo apt install aptitude && sudo aptitude purge ~c # Install `aptitude` then remove all UNUSED apps or packages and just it :]
 else
