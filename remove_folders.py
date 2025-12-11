@@ -2,7 +2,7 @@
 
 """just read the name this file just clear/delete all log files in current folder """
 ## import modules
-import os
+from os import walk, getcwd
 import os.path as path
 from shutil import rmtree
 
@@ -21,10 +21,10 @@ def remove_folder(folder_target: str = default_target) -> None:
     """ Remove specified folder [By default is`__pycache__`] in the current folder/directory and its subdirectories/subfolders.
     :param folder_target: The name of the folder to remove.
     """
-    current_folder = os.getcwd()
+    current_folder = getcwd()
     is_change_happen = False # this check if there are change are apply or not (Remove Folder) 
 
-    for path_file, directory_name, _ in os.walk(current_folder):
+    for path_file, directory_name, _ in walk(current_folder):
         for d_name in directory_name:
             folder_cache_path = path.join(path_file, d_name)
 
