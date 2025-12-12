@@ -79,7 +79,7 @@ def Main() -> None:
         want_to_remove = (user_input in yes)
         the_file_format = get_user_input(
             f"--- ENTER the FILE FORMAT [by default it's `{default_file_format}`]\n"
-            f"   | Be Careful this will Remove any File in current folder/directory: "
+            f"   | Be Careful this will {'Remove' if want_to_remove else 'Clear' } any File in current folder/directory: "
         )
         if not the_file_format: the_file_format = default_file_format  # Check if it's empty (default)
 
